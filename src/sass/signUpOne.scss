@@ -1,0 +1,255 @@
+@import'_ress.scss';
+$main:#E8F5FF;
+$sub:#FFFFFF;
+$accent:#385CA8;
+
+body{
+    background: $main;
+    font-family: 'Kiwi Maru', sans-serif;
+}
+
+header{
+    width: 100vw;
+    padding: 42px 0 22px;
+    background-color: $accent;
+    color: $sub;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    .return{
+        display: block;
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        left: 24px;
+        bottom: 20px;
+        z-index: 100;
+        background-image: url(../img/return-icon.svg);
+        background-position: center;
+        background-size: contain;
+    }
+    h1{
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+main{
+    color: #385CA8;
+    font-size: 14px;
+    select, input{
+        color: #333333;
+    }
+    width: 100vw;
+    height: 100vh;
+    background: $main;
+    display: flex;
+    align-items: center;
+    .content{
+        width: 100%;
+        margin-top: 90px;
+        form{
+            
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-direction: column;
+            margin: 0 auto;
+            ul{
+                list-style-type: none;
+                width: 80%;
+                height: 690px;
+                margin: 0 auto;
+            }
+            .brank_one{
+                width: 100%;
+                margin-bottom: 35px;
+            }
+            .brank{
+                margin-bottom: 35px;
+                width: 100px;
+                .triangle{
+                    background: $sub;
+                    box-shadow: 1px 2px 4px -2px gray inset;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        right: 9px;
+                        transform: translateY(-50%);
+                        z-index: 1;
+                        display: inline-block;
+                        border-style: solid;
+                        border-width: 11px 7px 0 7px;
+                        border-color: $accent transparent transparent transparent;
+                    }
+                    #sex{
+                        border: none;
+                        width: 100%;
+                        // width: 70px;
+                        height: 30px;
+                        position: relative;
+                        z-index: 2;
+                    }
+                }
+            }
+            .birth{
+                margin-bottom: 30px;
+                display: flex;
+                // justify-content: space-between;
+                .while{
+                    display: flex;
+                    .arrow{
+                        width: 80px;
+                        height: 30px;
+                        position: relative;
+                        background: $sub;
+                    
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            right: 8px;
+                            transform: translateY(-50%);
+                            z-index: 1;
+                            display: inline-block;
+                            border-style: solid;
+                            border-width: 11px 7px 0 7px;
+                            border-color: $accent transparent transparent transparent;
+                        }
+                        #year{
+                            // background: $sub;
+                            border: none;
+                            width: 100%;
+                            height: 30px;
+                            box-shadow: 1px 2px 4px -2px gray inset;
+                            position: relative;
+                            z-index: 100;
+                        }
+                    }
+                }
+                .arrow_two{                        
+                    width: 80px;
+                    height: 30px;
+                    display: flex;
+                    position: relative;
+                    margin-left: 19px;
+                    .while{
+                        width: 50px;
+                        height: 30px;
+                        position: relative;
+                         background: $sub;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            right: 4px;
+                            transform: translateY(-50%);
+                            z-index: 1;
+                            display: inline-block;
+                            border-style: solid;
+                            border-width: 11px 7px 0 7px;
+                            border-color: $accent transparent transparent transparent;
+                        }
+                        #month{
+                            border: none;
+                            width: 50px;
+                            height: 30px;
+                            box-shadow: 1px 2px 4px -2px gray inset;
+                            // margin-left: 15px;
+                            position: relative;
+                            z-index: 100;
+                        }
+                    }
+                    
+                }
+                .arrow_three{
+                    width: 80px;
+                    height: 30px;
+                    display: flex;
+                    position: relative;
+                    margin-left: 19px;
+                    .while{
+                        width: 50px;
+                        height: 30px;
+                        position: relative;
+                         background: $sub;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            right: 4px;
+                            transform: translateY(-50%);
+                            z-index: 1;
+                            display: inline-block;
+                            border-style: solid;
+                            border-width: 11px 7px 0 7px;
+                            border-color: $accent transparent transparent transparent;
+                        }
+                        #day{
+                            // background: $sub;
+                            border: none;
+                            width: 50px;
+                            height: 30px;
+                            box-shadow: 1px 2px 4px -2px gray inset;
+                            // margin-left: 15px;
+                            position: relative;
+                            z-index: 1;
+                        }
+                    }
+                    
+                    .while{
+                        #day{
+                            border: none;
+                            width: 50px;
+                            height: 30px;
+                            box-shadow: 1px 2px 4px -2px gray inset;
+                            // margin-left: 15px;
+                            position: relative;
+                            z-index: 100;
+                        }
+                    }
+                }
+            }
+            .sicness{
+                margin-bottom: 50px;
+            }
+            
+            #next{
+                display: block;
+                width: 180px;
+                height: 50px;
+                margin: 0 auto;
+                border-radius: 50px;
+                border: $accent solid 1px;
+                background-color: $sub;
+                color: $accent;
+                font-size: 20px;
+                margin-left: 0 auto;
+                box-shadow: none;
+                text-decoration: none;
+                line-height: 50px;
+                text-align: center;
+            }
+            input{
+                background: $sub;
+                height: 30px;
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                box-shadow: 1px 2px 4px -2px gray inset;
+                border: none;
+            }
+        }
+    }
+}
+li{
+    color: $accent;
+    font-size: 14px;
+}

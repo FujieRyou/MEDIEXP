@@ -1,0 +1,90 @@
+@import'_ress.scss';
+$main:#E8F5FF;
+$sub:#FFFFFF;
+$accent:#385CA8;
+
+body{
+    font-family: 'Kiwi Maru', sans-serif;
+    background: $main;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    width: 100vw;
+    padding: 42px 0 22px;
+    background-color: $accent;
+    color: $sub;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    .return{
+        display: block;
+        width: 23px;
+        height: 23px;
+        // border: solid 1px #000;
+        position: absolute;
+        left: 24px;
+        bottom: 20px;
+        background-image: url(../img/return-icon.svg);
+        background-position: center;
+        background-size: contain;
+    }
+    h1{
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+main{
+    width: 100vw;
+    form{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 120px auto 0 auto;
+        height: 652px;
+        .content{
+            width: 90%;
+            background: $sub;
+            border-radius: 5px;
+            margin: 0 auto;
+            ul{
+                list-style-type: none;
+                padding: 20px 20px 5px 25px;
+                li{
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                }
+            }
+            p{
+                font-size: 12px;
+                color: #8B909A;
+                text-align: right;
+                margin-right: 10px;
+            }
+        }
+        .btn{
+            display: block;
+            margin: 0 auto;
+            #next{
+                display: block;
+                width: 180px;
+                height: 50px;
+                line-height: 50px;
+                text-decoration: none;
+                text-align: center;
+                border-radius: 50px;
+                border: $accent solid 1px;
+                background-color: $sub;
+                color: $accent;
+                font-size: 20px;
+                box-shadow: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+@import'_ress.scss';
+$main:#E8F5FF;
+$sub:#FFFFFF;
+$accent:#385CA8;
+
+body{
+    font-family: 'Kiwi Maru', sans-serif;
+    background: $main;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    width: 100vw;
+    padding: 42px 0 22px;
+    background-color: $accent;
+    color: $sub;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    .return{
+        display: block;
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        left: 24px;
+        bottom: 20px;
+        z-index: 100;
+        background-image: url(../img/return-icon.svg);
+        background-position: center;
+        background-size: contain;
+    }
+    h1{
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    form{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 110px auto 0 auto;
+        height: 662px;
+        .content{
+            width: 100%;
+            background: $sub;
+            border-radius: 5px;
+            margin: 0 auto 200px auto;
+            ul{
+                list-style-type: none;
+                padding: 20px 20px 5px 25px;
+                li{
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .btn{
+            display: block;
+            margin: 0 auto;
+            #next{
+                display: block;
+                width: 180px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50px;
+                border: $accent solid 1px;
+                background-color: $sub;
+                color: $accent;
+                font-size: 20px;
+                box-shadow: none;
+            }
+        }
+    }
+}

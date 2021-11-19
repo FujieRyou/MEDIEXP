@@ -1,0 +1,137 @@
+
+@import '_ress.scss';
+body{
+    font-family: 'Kiwi Maru', sans-serif;
+    background-color: #E8F5FF;
+}
+ul{
+    list-style: none;
+}
+
+header{
+    width: 100vw;
+    padding: 42px 0 22px;
+    background-color: #385CA8;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    .return{
+        display: block;
+        width: 23px;
+        height: 23px;
+        // border: solid 1px #000;
+        position: absolute;
+        left: 24px;
+        bottom: 20px;
+        background-image: url(../img/return-icon.svg);
+        background-position: center;
+        background-size: contain;
+    }
+    .title{
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: normal;
+    }
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 84px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    .nav{
+        width: 100%;
+        height: 49px;
+        background-image: url(../img/nav04.svg);
+        background-position: center;
+        background-size: contain;
+    }
+    form{
+        background-color: #E8F5FF;
+        width: 100%;
+        height: calc(100vh - 134px);
+        .formWarp{
+            width: 85%;
+            // height: 100%;
+            padding: 25px 0 200px;
+            margin: 0 auto;
+            
+            &__items{
+                padding: 18px 32px 18px 14px;
+                display: grid;
+                grid-template-columns: 1fr 40px;
+                background-color: #FFF;
+                border-radius: 16px;
+                margin: 0 0 14px;
+                input[type=checkbox]{
+                    display: none;
+                }
+                input[type=checkbox]:checked + .label::before {
+                    background-color: #385CA8;
+                }
+                .label{
+                    display: flex;
+                    align-items: center;
+                    // width: 50%;
+                    // text-align: left;
+                    // padding-left: 22px;
+                    &::before{
+                        content: '';
+                        margin-right: 25px;
+                        display: inline-block;
+                        width: 21px;
+                        height: 21px;
+                        border: #385CA8 3px solid;
+                        border-radius: 50%;
+                    }
+                   
+                }
+                
+                
+                
+                &:last-of-type{
+                    display: grid;
+                    grid-template-columns: 1fr 148px;
+                    .countWarp{
+                        display: flex;
+                        justify-content: space-between;
+                        
+                    }
+                    
+                }
+                input[type="radio"]{
+                    display: none;
+                    width: 21px;
+                    height: 21px;
+                    background-color: blue;
+                    border: 2px solid #2196f3;
+                }
+                input[type=radio]:checked + .label::before {
+                    background-color: #385CA8;
+                }
+                
+                
+            }
+        }
+        .register{
+            display: block;
+            color: #385CA8;
+            width: 180px;
+            font-size: 20px;
+            text-decoration: none;
+            border: 2px solid #385CA8;
+            border-radius: 50px;
+            text-align: center;
+            background-color: #FFF;
+            padding: 15px 0;
+            margin: 0 auto;
+            line-height: 20px;
+            
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="373" height="48" viewBox="0 0 373 48">
+  <g id="グループ_20" data-name="グループ 20" transform="translate(-3094 115)">
+    <path id="前面オブジェクトで型抜き_10" data-name="前面オブジェクトで型抜き 10" d="M90.032,48H0L22.968,24,0,0H90.032L113,24,90.032,48Z" transform="translate(3185 -115)" fill="#7189bb"/>
+    <path id="前面オブジェクトで型抜き_11" data-name="前面オブジェクトで型抜き 11" d="M89.235,48H0L22.764,24,0,0H89.236L112,24,89.236,48Z" transform="translate(3282 -115)" fill="#7189bb"/>
+    <path id="前面オブジェクトで型抜き_13" data-name="前面オブジェクトで型抜き 13" d="M88,48H0L22.917,24,0,0H88V48Z" transform="translate(3379 -115)" fill="#7189bb"/>
+    <path id="合体_22" data-name="合体 22" d="M0,48V0H85.6L107,24,85.6,48Z" transform="translate(3094 -115)" fill="#385ca8"/>
+    <text id="症状入力" transform="translate(3109 -87)" fill="#fff" font-size="11" font-family="HiraginoSans-W3, Hiragino Sans"><tspan x="0" y="0">症状入力</tspan></text>
+    <text id="店舗選択" transform="translate(3220 -87)" fill="#fff" font-size="11" font-family="HiraginoSans-W3, Hiragino Sans"><tspan x="0" y="0">店舗選択</tspan></text>
+    <text id="セット選択" transform="translate(3315 -87)" fill="#fff" font-size="11" font-family="HiraginoSans-W3, Hiragino Sans"><tspan x="0" y="0">セット選択</tspan></text>
+    <text id="支払い" transform="translate(3419 -87)" fill="#fff" font-size="11" font-family="HiraginoSans-W3, Hiragino Sans"><tspan x="0" y="0">支払い</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,100 @@
+@import'_ress.scss';
+$main:#E8F5FF;
+$sub:#FFFFFF;
+$accent:#385CA8;
+
+body{
+    font-family: 'Kiwi Maru', sans-serif;
+    background: $main;
+}
+
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background: $main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content{
+        width: 70%;
+        padding-top: 100px;
+        h1{
+            width: 205px;
+            height: 163px;
+            margin: 0 auto 135px;
+            img{
+                width: 100%;
+
+            }
+        }
+        form{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-direction: column;
+            height: 300px;
+            input{
+                width: 100%;
+                background: $sub;
+                }
+            #rogin{
+                width: 70%;
+                height: 45px;
+                border-radius:50px;
+                border: #385CA8 solid 1px;
+                background-color: #FFFFFF;
+                color: #385CA8;
+                margin: 0 auto;
+                text-decoration: none;
+                line-height: 45px;
+                text-align: center;
+                }
+            #sign{
+                width: 70%;
+                height: 45px;
+                border-radius:50px;
+                border: #385CA8 solid 1px;
+                background-color: #FFFFFF;
+                color: #385CA8;
+                margin: 0 auto;
+                text-decoration: none;
+                line-height: 45px;
+                text-align: center;
+                }
+            p{
+                font-size: 12px;
+                margin: 0 auto;
+                color: #385CA8;
+                }
+            .border{
+                width: 250px;
+                border-bottom: solid 1px #707070;
+                }
+            #pass{
+                
+                height: 30px;
+                margin-bottom: 30px;
+                box-shadow: 1px 2px 4px -2px gray inset;
+                border: none;
+                }
+            #mail{
+                height: 30px;
+                box-shadow: 1px 2px 4px -2px gray inset;
+                border: none;
+                }
+            }
+        }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
